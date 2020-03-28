@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E221E432242FA8BC00704F57 /* WiFiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E221E431242FA8BC00704F57 /* WiFiView.swift */; };
+		E221E435242FAD8600704F57 /* WiFiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E221E434242FAD8600704F57 /* WiFiViewModel.swift */; };
 		E2BE725723CD65820000FF2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE725623CD65820000FF2D /* AppDelegate.swift */; };
 		E2BE725923CD65820000FF2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE725823CD65820000FF2D /* SceneDelegate.swift */; };
 		E2BE725B23CD65820000FF2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE725A23CD65820000FF2D /* ContentView.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E221E431242FA8BC00704F57 /* WiFiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiView.swift; sourceTree = "<group>"; };
+		E221E434242FAD8600704F57 /* WiFiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiViewModel.swift; sourceTree = "<group>"; };
 		E2BE725323CD65820000FF2D /* SettingsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BE725623CD65820000FF2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BE725823CD65820000FF2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E221E433242FAD7300704F57 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E221E434242FAD8600704F57 /* WiFiViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		E2BE724A23CD65820000FF2D = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +82,7 @@
 		E2BE725523CD65820000FF2D /* SettingsApp */ = {
 			isa = PBXGroup;
 			children = (
+				E221E433242FAD7300704F57 /* ViewModels */,
 				E2BE727223CD6EAB0000FF2D /* Helpers */,
 				E2BE726F23CD68110000FF2D /* Views */,
 				E2BE726A23CD65A40000FF2D /* Models */,
@@ -108,6 +121,7 @@
 				E2BE727523CD71B80000FF2D /* BluetoothView.swift */,
 				E2D41F3F23F0FFC9005348C7 /* ToggleBluetoothView.swift */,
 				E2D41F4123F102F3005348C7 /* ActivityIndicator.swift */,
+				E221E431242FA8BC00704F57 /* WiFiView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2BE727123CD681A0000FF2D /* SignInView.swift in Sources */,
+				E221E432242FA8BC00704F57 /* WiFiView.swift in Sources */,
 				E2BE726C23CD65AD0000FF2D /* Option.swift in Sources */,
 				E2BE726E23CD65DB0000FF2D /* InnerOptionValue.swift in Sources */,
 				E2BE725723CD65820000FF2D /* AppDelegate.swift in Sources */,
@@ -199,6 +214,7 @@
 				E2BE725923CD65820000FF2D /* SceneDelegate.swift in Sources */,
 				E2D41F4223F102F3005348C7 /* ActivityIndicator.swift in Sources */,
 				E2D41F4023F0FFC9005348C7 /* ToggleBluetoothView.swift in Sources */,
+				E221E435242FAD8600704F57 /* WiFiViewModel.swift in Sources */,
 				E2BE725B23CD65820000FF2D /* ContentView.swift in Sources */,
 				E2BE727623CD71B80000FF2D /* BluetoothView.swift in Sources */,
 			);

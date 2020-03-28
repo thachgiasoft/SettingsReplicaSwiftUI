@@ -36,8 +36,8 @@ struct SignInView: View {
 
 extension SignInView {
     struct Constants {
-        static let profileImageHeight: CGFloat = 50
-        static let profileImageWidth: CGFloat = 50
+        static let profileImageHeight: CGFloat = 60
+        static let profileImageWidth: CGFloat = 60
     }
 }
 

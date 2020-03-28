@@ -21,6 +21,7 @@ struct ToggleBluetoothView: View {
                     HStack {
                         Text("Searching for nearby devices")
                             .foregroundColor(.gray)
+                            .font(.system(size: 18.0))
                             .font(.system(.subheadline))
                         ActivityIndicator(style: .large)
                     }

@@ -17,6 +17,7 @@ struct ContentView: View {
                 }
                 Section {
                     BluetoothView()
+                    WiFiView()
                 }
             }.navigationBarTitle(Text("Settings"))
         }
