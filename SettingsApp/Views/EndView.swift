@@ -12,8 +12,6 @@ struct EndView: View {
     let value: InnerOptionValue
     
     var body: some View {
-        return NavigationLink(destination: EndView(value: value)) {
-            Text("Coming Soon")
-        }.navigationBarTitle(Text(value.title), displayMode: .inline)
+        Text("Coming Soon")
     }
 }
