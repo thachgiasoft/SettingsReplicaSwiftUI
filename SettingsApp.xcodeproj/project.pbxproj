@@ -99,6 +99,44 @@
 			path = Text;
 			sourceTree = "<group>";
 		};
+		E26338B4243A362C003DC06A /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				E2BE727523CD71B80000FF2D /* BluetoothView.swift */,
+				E2D41F3F23F0FFC9005348C7 /* ToggleBluetoothView.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		E26338B5243A363C003DC06A /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				E23292A624397502005E1B85 /* OptionRow.swift */,
+				E23292A824397FAD005E1B85 /* OptionSettingsView.swift */,
+				E23292AA24398004005E1B85 /* OptionInnerView.swift */,
+				E23292AC243981DB005E1B85 /* InnerView.swift */,
+				E23292AE243981EE005E1B85 /* ToggleView.swift */,
+				E23292B2243984E5005E1B85 /* EndView.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		E26338B6243A3650003DC06A /* WiFi */ = {
+			isa = PBXGroup;
+			children = (
+				E221E431242FA8BC00704F57 /* WiFiView.swift */,
+			);
+			path = WiFi;
+			sourceTree = "<group>";
+		};
+		E26338B7243A365C003DC06A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E2BE727023CD681A0000FF2D /* SignInView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		E2BE724A23CD65820000FF2D = {
 			isa = PBXGroup;
 			children = (
@@ -153,17 +191,11 @@
 		E2BE726F23CD68110000FF2D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E2BE727023CD681A0000FF2D /* SignInView.swift */,
-				E2BE727523CD71B80000FF2D /* BluetoothView.swift */,
-				E2D41F3F23F0FFC9005348C7 /* ToggleBluetoothView.swift */,
+				E26338B7243A365C003DC06A /* Authentication */,
+				E26338B6243A3650003DC06A /* WiFi */,
+				E26338B5243A363C003DC06A /* Options */,
+				E26338B4243A362C003DC06A /* Bluetooth */,
 				E2D41F4123F102F3005348C7 /* ActivityIndicator.swift */,
-				E221E431242FA8BC00704F57 /* WiFiView.swift */,
-				E23292A624397502005E1B85 /* OptionRow.swift */,
-				E23292A824397FAD005E1B85 /* OptionSettingsView.swift */,
-				E23292AA24398004005E1B85 /* OptionInnerView.swift */,
-				E23292AC243981DB005E1B85 /* InnerView.swift */,
-				E23292AE243981EE005E1B85 /* ToggleView.swift */,
-				E23292B2243984E5005E1B85 /* EndView.swift */,
 				E23292B42439A393005E1B85 /* DefaultImage.swift */,
 			);
 			path = Views;
