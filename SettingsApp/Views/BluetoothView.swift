@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct BluetoothView: View {
-    @ObservedObject var bluetooth = Settings()
+    @ObservedObject var bluetooth = BlueToothViewModel()
     
     var body: some View {
         return NavigationLink(destination: ToggleBluetoothView(bluetooth: bluetooth)) {

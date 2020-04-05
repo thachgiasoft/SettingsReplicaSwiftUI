@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ToggleBluetoothView: View {
-    @ObservedObject var bluetooth: Settings
+    @ObservedObject var bluetooth: BlueToothViewModel
     
     var body: some View {
         Form {
