@@ -17,8 +17,7 @@ struct ToggleView: View {
             DefaultImage()
             Toggle(isOn: $viewModel.isToggleOn) {
                 Text(value.title)
-                    .foregroundColor(.blue)
-                    .font(.system(size: 18))
+                    .modifier(PrimaryLabelModifier())
             }
         }
     }

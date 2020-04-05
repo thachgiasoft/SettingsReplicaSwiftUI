@@ -16,8 +16,7 @@ struct InnerView: View {
             HStack {
                 DefaultImage()
                 Text(value.title)
-                    .foregroundColor(.blue)
-                    .font(.system(size: 18))
+                    .modifier(PrimaryLabelModifier())
             }
         }
     }

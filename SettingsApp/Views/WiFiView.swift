@@ -37,8 +37,8 @@ struct WiFiContainer: View {
     var body: some View {
         HStack {
             DefaultImage()
-            Text("WiFi").foregroundColor(.blue)
-                .font(.system(size: 20.0))
+            Text("WiFi")
+                .modifier(PrimaryLabelModifier())
                 .frame(height: 40.0)
         }
     }

@@ -16,8 +16,7 @@ struct BluetoothView: View {
             HStack() {
                 DefaultImage()
                 Text("Bluetooth")
-                    .foregroundColor(.blue)
-                    .font(.system(size: 20))
+                    .modifier(PrimaryLabelModifier())
                     .frame(width: 150,height: 40, alignment: .leading)
                 Text($bluetooth.isBluetoothOn.wrappedValue ? "On" : "Off")
                     .foregroundColor(.gray)

@@ -16,8 +16,7 @@ struct OptionSettingsView: View {
             HStack {
                 DefaultImage()
                 Text(option.title)
-                    .foregroundColor(.blue)
-                    .font(.system(size: 18.0))
+                    .modifier(PrimaryLabelModifier())
             }
         }
     }
