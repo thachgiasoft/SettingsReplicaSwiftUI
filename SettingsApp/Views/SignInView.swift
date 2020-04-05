@@ -11,13 +11,8 @@ import SwiftUI
 struct SignInView: View {
     var body: some View {
         HStack(alignment: .center, spacing: 16) {
-            Image("default")
-                .resizable()
-                .cornerRadius(20)
-                .frame(width: Constants.profileImageWidth, height: Constants.profileImageHeight)
-                .clipped()
-                .aspectRatio(contentMode: .fit)
-            
+            DefaultImage(width: Constants.profileImageWidth,
+                         height: Constants.profileImageHeight)
             VStack(alignment: .leading, spacing: 4) {
                 Text("Sign in to your iPhone")
                     .foregroundColor(.blue)

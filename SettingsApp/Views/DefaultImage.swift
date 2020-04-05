@@ -9,11 +9,19 @@
 import SwiftUI
 
 struct DefaultImage: View {
+    let width: CGFloat
+    let height: CGFloat
+    
+    init(width: CGFloat = 25, height: CGFloat = 25) {
+        self.width = width
+        self.height = height
+    }
+    
     var body: some View {
         Image("default")
         .resizable()
         .cornerRadius(12)
-        .frame(width: 25, height: 25)
+        .frame(width: width, height: height)
         .clipped()
         .aspectRatio(contentMode: .fit)
     }
