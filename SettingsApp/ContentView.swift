@@ -19,6 +19,9 @@ struct ContentView: View {
                     BluetoothView()
                     WiFiView()
                 }
+                ForEach(Option.options, id: \.self) { settingOption in
+                    OptionRow(option: settingOption)
+                }
             }.navigationBarTitle(Text("Settings"))
         }
     }

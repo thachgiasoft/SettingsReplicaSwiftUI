@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct InnerOptionValue: Codable {
+struct InnerOptionValue: Codable, Hashable {
     let title: String
     let isAddSection: Bool
     let isUseToggle: Bool

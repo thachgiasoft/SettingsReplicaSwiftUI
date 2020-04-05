@@ -8,11 +8,15 @@
 
 import Foundation
 
-struct Option: Codable {
+struct Option: Codable, Hashable, Equatable {
     let id: Int
     let title: String
     let isAddSection: Bool
     var values: [InnerOptionValue]
+    
+    static func == (lhs: Option, rhs: Option) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 extension Option {
