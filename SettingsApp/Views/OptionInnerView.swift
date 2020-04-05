@@ -28,6 +28,12 @@ struct OptionInnerView: View {
                 Section(header: Text(value.headerTitle)) {
                     InnerView(value: value)
                 }
+            } else if !value.isAddSection && value.isUseToggle {
+                ToggleView(value: value)
+            } else if value.isAddSection && value.isUseToggle {
+                Section {
+                    ToggleView(value: value)
+                }
             } else {
                 InnerView(value: value)
             }
