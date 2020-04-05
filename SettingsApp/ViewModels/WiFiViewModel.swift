@@ -9,17 +9,8 @@
 import Combine
 
 class WiFiViewModel: ObservableObject {
-    
-    var didChange = PassthroughSubject<Void, Never>()
-    @Published var selection: WiFiSelection = .off {
-        didSet {
-            update()
-        }
-    }
-    
-    func update() {
-        didChange.send()
-    }
+
+    @Published var selection: WiFiSelection = .off
 
 }
 
