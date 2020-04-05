@@ -23,9 +23,7 @@ struct WiFiView: View {
             if viewModel.selection == .on {
                 HStack {
                     Text("Searching for network")
-                        .foregroundColor(.gray)
-                        .font(.system(size: 16.0))
-                        .font(.system(.subheadline))
+                        .modifier(LabelModifier(type: .subheadlineSmall))
                     ActivityIndicator(style: .medium)
                 }
             }
@@ -38,7 +36,7 @@ struct WiFiContainer: View {
         HStack {
             DefaultImage()
             Text("WiFi")
-                .modifier(PrimaryLabelModifier())
+                .modifier(LabelModifier(type: .primary))
                 .frame(height: 40.0)
         }
     }

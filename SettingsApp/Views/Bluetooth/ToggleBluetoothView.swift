@@ -20,9 +20,7 @@ struct ToggleBluetoothView: View {
                 if bluetooth.isBluetoothOn {
                     HStack {
                         Text("Searching for nearby devices")
-                            .foregroundColor(.gray)
-                            .font(.system(size: 18.0))
-                            .font(.system(.subheadline))
+                            .modifier(LabelModifier(type: .subheadlineMedium))
                         ActivityIndicator(style: .large)
                     }
                 }

@@ -1,5 +1,5 @@
 //
-//  PrimaryLabelModifier.swift
+//  LabelModifier.swift
 //  SettingsApp
 //
 //  Created by Alonso on 4/5/20.
@@ -9,9 +9,13 @@
 import SwiftUI
 
 struct LabelModifier: ViewModifier {
+    
+    let type: TextType
+    
     func body(content: Content) -> some View {
         content
-            .foregroundColor(.blue)
-            .font(.system(size: 18.0))
+            .foregroundColor(type.textColor)
+            .font(type.fontSize)
+            .font(type.fontStyle)
     }
 }

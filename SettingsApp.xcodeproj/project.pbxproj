@@ -18,7 +18,8 @@
 		E23292B124398254005E1B85 /* ToggleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23292B024398254005E1B85 /* ToggleViewModel.swift */; };
 		E23292B3243984E5005E1B85 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23292B2243984E5005E1B85 /* EndView.swift */; };
 		E23292B52439A393005E1B85 /* DefaultImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23292B42439A393005E1B85 /* DefaultImage.swift */; };
-		E26338B3243A3339003DC06A /* PrimaryLabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26338B2243A3339003DC06A /* PrimaryLabelModifier.swift */; };
+		E26338B3243A3339003DC06A /* LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26338B2243A3339003DC06A /* LabelModifier.swift */; };
+		E26338BC243A6C09003DC06A /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26338BB243A6C09003DC06A /* TextHelper.swift */; };
 		E2BE725723CD65820000FF2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE725623CD65820000FF2D /* AppDelegate.swift */; };
 		E2BE725923CD65820000FF2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE725823CD65820000FF2D /* SceneDelegate.swift */; };
 		E2BE725B23CD65820000FF2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE725A23CD65820000FF2D /* ContentView.swift */; };
@@ -45,7 +46,8 @@
 		E23292B024398254005E1B85 /* ToggleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleViewModel.swift; sourceTree = "<group>"; };
 		E23292B2243984E5005E1B85 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		E23292B42439A393005E1B85 /* DefaultImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImage.swift; sourceTree = "<group>"; };
-		E26338B2243A3339003DC06A /* PrimaryLabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryLabelModifier.swift; sourceTree = "<group>"; };
+		E26338B2243A3339003DC06A /* LabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelModifier.swift; sourceTree = "<group>"; };
+		E26338BB243A6C09003DC06A /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
 		E2BE725323CD65820000FF2D /* SettingsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BE725623CD65820000FF2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BE725823CD65820000FF2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +96,7 @@
 		E26338B1243A331B003DC06A /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				E26338B2243A3339003DC06A /* PrimaryLabelModifier.swift */,
+				E26338B2243A3339003DC06A /* LabelModifier.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -137,6 +139,14 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		E26338BA243A6BFB003DC06A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E26338BB243A6C09003DC06A /* TextHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E2BE724A23CD65820000FF2D = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 		E2BE725523CD65820000FF2D /* SettingsApp */ = {
 			isa = PBXGroup;
 			children = (
+				E26338BA243A6BFB003DC06A /* Helpers */,
 				E26338B0243A3305003DC06A /* ViewModifiers */,
 				E221E433242FAD7300704F57 /* ViewModels */,
 				E2BE726F23CD68110000FF2D /* Views */,
@@ -280,6 +291,7 @@
 				E23292AF243981EE005E1B85 /* ToggleView.swift in Sources */,
 				E23292B124398254005E1B85 /* ToggleViewModel.swift in Sources */,
 				E2BE726E23CD65DB0000FF2D /* InnerOptionValue.swift in Sources */,
+				E26338BC243A6C09003DC06A /* TextHelper.swift in Sources */,
 				E2BE725723CD65820000FF2D /* AppDelegate.swift in Sources */,
 				E2BE725923CD65820000FF2D /* SceneDelegate.swift in Sources */,
 				E2D41F4223F102F3005348C7 /* ActivityIndicator.swift in Sources */,
@@ -289,7 +301,7 @@
 				E2D41F4023F0FFC9005348C7 /* ToggleBluetoothView.swift in Sources */,
 				E221E435242FAD8600704F57 /* WiFiViewModel.swift in Sources */,
 				E23292AB24398004005E1B85 /* OptionInnerView.swift in Sources */,
-				E26338B3243A3339003DC06A /* PrimaryLabelModifier.swift in Sources */,
+				E26338B3243A3339003DC06A /* LabelModifier.swift in Sources */,
 				E23292B52439A393005E1B85 /* DefaultImage.swift in Sources */,
 				E2BE725B23CD65820000FF2D /* ContentView.swift in Sources */,
 				E2BE727623CD71B80000FF2D /* BluetoothView.swift in Sources */,

@@ -17,7 +17,7 @@ struct ToggleView: View {
             DefaultImage()
             Toggle(isOn: $viewModel.isToggleOn) {
                 Text(value.title)
-                    .modifier(PrimaryLabelModifier())
+                    .modifier(LabelModifier(type: .primary))
             }
         }
     }
