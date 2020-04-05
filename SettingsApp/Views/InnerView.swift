@@ -14,12 +14,7 @@ struct InnerView: View {
     var body: some View {
         return NavigationLink(destination: EndView(value: value)) {
             HStack {
-                Image("default")
-                .resizable()
-                .cornerRadius(12)
-                .frame(width: 25, height: 25)
-                .clipped()
-                .aspectRatio(contentMode: .fit)
+                DefaultImage()
                 Text(value.title)
                     .foregroundColor(.blue)
                     .font(.system(size: 18))

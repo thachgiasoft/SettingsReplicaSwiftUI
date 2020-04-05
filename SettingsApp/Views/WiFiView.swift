@@ -36,12 +36,7 @@ struct WiFiView: View {
 struct WiFiContainer: View {
     var body: some View {
         HStack {
-            Image("default")
-                .resizable()
-                .cornerRadius(12.5)
-                .frame(width: 25, height: 25)
-                .clipped()
-                .aspectRatio(contentMode: .fit)
+            DefaultImage()
             Text("WiFi").foregroundColor(.blue)
                 .font(.system(size: 20.0))
                 .frame(height: 40.0)

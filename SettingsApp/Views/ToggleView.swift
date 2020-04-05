@@ -14,13 +14,7 @@ struct ToggleView: View {
     
     var body: some View {
         HStack {
-            Image("default")
-                .resizable()
-                .cornerRadius(12)
-                .frame(width: 25, height: 25)
-                .clipped()
-                .aspectRatio(contentMode: .fit)
-            
+            DefaultImage()
             Toggle(isOn: $viewModel.isToggleOn) {
                 Text(value.title)
                     .foregroundColor(.blue)
