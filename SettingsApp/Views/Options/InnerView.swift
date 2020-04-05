@@ -16,7 +16,7 @@ struct InnerView: View {
             HStack {
                 DefaultImage()
                 Text(value.title)
-                    .modifier(PrimaryLabelModifier())
+                    .modifier(LabelModifier(type: .primary))
             }
         }
     }

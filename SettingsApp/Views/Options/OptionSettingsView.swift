@@ -16,7 +16,7 @@ struct OptionSettingsView: View {
             HStack {
                 DefaultImage()
                 Text(option.title)
-                    .modifier(PrimaryLabelModifier())
+                    .modifier(LabelModifier(type: .primary))
             }
         }
     }

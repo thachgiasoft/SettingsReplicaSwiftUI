@@ -16,12 +16,10 @@ struct BluetoothView: View {
             HStack() {
                 DefaultImage()
                 Text("Bluetooth")
-                    .modifier(PrimaryLabelModifier())
+                    .modifier(LabelModifier(type: .primary))
                     .frame(width: 150,height: 40, alignment: .leading)
                 Text($bluetooth.isBluetoothOn.wrappedValue ? "On" : "Off")
-                    .foregroundColor(.gray)
-                    .font(.system(size: 20))
-                    .font(.subheadline)
+                    .modifier(LabelModifier(type: .subheadlineLarge))
                     .frame(width: 170, height: 40, alignment: .trailing)
             }
         }
